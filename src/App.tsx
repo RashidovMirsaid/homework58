@@ -1,5 +1,28 @@
+import { useState } from 'react';
+import Modal from './components/Modal/Modal';
+
 function App() {
-	return <></>;
+	const [showModal, setShowModal] = useState(false);
+
+	const open = () => setShowModal(true);
+	const close = () => setShowModal(false);
+
+	return (
+		<>
+			<main>
+				<button className='btn' onClick={open}>
+					Open
+				</button>
+				<Modal show={showModal} onClose={close} title='Lorem Ipsum'>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+						suscipit repellat. Deleniti itaque perspiciatis laudantium! Rem
+						accusamus nemo nam necessitatibus.
+					</p>
+				</Modal>
+			</main>
+		</>
+	);
 }
 
 export default App;
