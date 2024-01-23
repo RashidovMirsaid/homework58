@@ -10,7 +10,7 @@ function App() {
 	return (
 		<>
 			<main>
-				<button className='btn' onClick={open}>
+				<button className='btn btn-danger' onClick={open}>
 					Open
 				</button>
 				<Modal show={showModal} onClose={close} title='Lorem Ipsum'>
