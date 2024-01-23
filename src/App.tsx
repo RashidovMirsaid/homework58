@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from './components/Modal/Modal';
+import Alert from './components/Alert/Alert';
 
 function App() {
 	const [showModal, setShowModal] = useState(false);
@@ -20,6 +21,7 @@ function App() {
 						accusamus nemo nam necessitatibus.
 					</p>
 				</Modal>
+				<Alert />
 			</main>
 		</>
 	);
